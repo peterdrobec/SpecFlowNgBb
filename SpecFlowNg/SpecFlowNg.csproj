@@ -59,6 +59,7 @@
       <HintPath>..\packages\Protractor.0.3.0\lib\net40\Protractor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -82,12 +83,14 @@
     <Compile Include="Extensions\ScenarioContextExtensions.cs" />
     <Compile Include="Helpers\APIHelper.cs" />
     <Compile Include="Helpers\Cleaner.cs" />
+    <Compile Include="Helpers\EnvironmentSettings.cs" />
     <Compile Include="OtherTests\BasicTests.cs" />
     <Compile Include="Features\DashBoard.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DashBoard.feature</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Steps\HomePageSteps.cs" />
     <Compile Include="Hooks\NgEnvironment.cs" />
     <Compile Include="Hooks\ScenarioHooks.cs" />

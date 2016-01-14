@@ -22,13 +22,12 @@ namespace SpecFlowNg.Hooks
         public static void InitializeScenario()
         {
             // write any initialization which you want to apply once for every scenario
-            //var driver = new ChromeDriver();
-            //driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(10));
 
-            //Session s = new Session<LocalEnvironment>();
+            var _settings = new EnvironmentSettings();
+
             Threaded<Session>
                 .With<LocalEnvironment>()
-                .NavigateTo<HomePage>("http://10.10.30.37/home");
+                .NavigateTo<HomePage>(_settings.BaseUrl);
 
             ScenarioContext.Current.AddOrUpdate(typeof(Cleaner).FullName, new Cleaner());
 
