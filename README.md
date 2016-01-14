@@ -1,2 +1,2 @@
-﻿Nice Protractor-based framework for E2E test of Angular Apps from https://github.com/anthonychu
-Thanks!
+﻿Nice E2E test automation framework for Angular Apps inspired by https://github.com/anthonychu
+Includes SpecFlow, Protractor, BumbleBee.
